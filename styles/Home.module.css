@@ -1,8 +1,11 @@
 .container {
-  /* background: #080a0d; */
+  background: radial-gradient(
+      ellipse 1711px 1891px at -365px -287px,
+      rgba(155, 53, 235, 0.2) 0%,
+      rgba(155, 53, 235, 0) 100%
+    ),
+    #080a0d;
   min-height: 100vh;
-
-  background: url(../public/bg.svg) center top / 100% auto no-repeat;
 }
 
 .main {
@@ -13,4 +16,6 @@
 }
 
 .footer {
+  width: 100%;
+  height: 1000vh;
 }
