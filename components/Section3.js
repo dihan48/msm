@@ -6,6 +6,7 @@ import "swiper/css";
 // import "swiper/css/pagination";
 
 import styles from "../styles/Section3.module.css";
+import { useEffect, useRef, useState } from "react";
 
 const slider = [
   "/s1.png",
@@ -40,6 +41,8 @@ const slider = [
 ];
 
 export function Section3() {
+  const paginationRef = useRef();
+
   return (
     <div className={styles.bg_container}>
       <Image
@@ -63,6 +66,13 @@ export function Section3() {
         height={80}
         className={styles.bg3}
       />
+      <Image
+        src={"/4510133a6f9c014534b9b84fd6197fec.png"}
+        alt=""
+        width={352}
+        height={352}
+        className={styles.bg4}
+      />
       <section className={styles.container}>
         <h1 className={styles.title}>Портфолио</h1>
         <div className={styles.slider_container}>
@@ -81,6 +91,9 @@ export function Section3() {
               horizontalClass: styles.bullets,
               modifierClass: "",
             }}
+            onBeforeInit={(swiper) => {
+              swiper.params.pagination.el = paginationRef.current;
+            }}
           >
             {slider.map((url, index) => (
               <SwiperSlide key={index} className={styles.slide_container}>
@@ -89,16 +102,17 @@ export function Section3() {
                     src={url}
                     alt=""
                     fill
-                    sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 20vw"
                     loading={"lazy"}
+                    quality={100}
                   />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
+        <div ref={paginationRef} className={styles.pagination} />
+        <button className={styles.button}>Смотреть все работы</button>
       </section>
     </div>
   );

@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-.container::after {
+.container::before {
   overflow: hidden;
   content: "";
   position: absolute;
@@ -30,6 +30,7 @@
   bottom: auto;
   border-radius: 0px;
   background: url(../public/work_bg.svg) right bottom / contain no-repeat;
+  pointer-events: none;
 }
 
 .bg1 {
@@ -62,8 +63,20 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
+.bg4 {
+  position: absolute;
+  z-index: 1;
+  left: auto;
+  right: -163px;
+  top: -112px;
+  bottom: auto;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .title {
+  margin: unset;
   padding-top: 82px;
+  padding-bottom: 72px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
@@ -74,11 +87,36 @@
 }
 
 .slider_container {
-  padding: 0 26px 22px;
+  padding: 0 26px;
+  position: relative;
+}
+
+.slider_container::after {
+  content: "";
+  position: absolute;
+  width: 258px;
+  height: 258px;
+  top: -20px;
+  left: 6px;
+  right: auto;
+  bottom: auto;
+  background: url(../public/Group42.svg) center / contain no-repeat;
+}
+
+.slider_container::before {
+  content: "";
+  position: absolute;
+  width: 258px;
+  height: 258px;
+  top: auto;
+  left: auto;
+  right: 8px;
+  bottom: -22px;
+  background: url(../public/Group41.svg) center / contain no-repeat;
 }
 
 .slider {
-  padding-bottom: 102px;
+  /* background: red; */
 }
 
 .slide_container {
@@ -93,8 +131,11 @@
 }
 
 .bullets {
-  position: relative;
-  bottom: -102px;
+  /* position: absolute;
+  bottom: -80px;
+  left: 0; */
+
+  margin-top: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -135,4 +176,24 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.pagination {
+}
+
+.button {
+  padding: 10px 40px;
+  margin: 51px auto 0;
+  display: block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  background: #bd39c9;
+  opacity: 0.8;
+  border-radius: 50px;
+  cursor: pointer;
+  border: unset;
 }
