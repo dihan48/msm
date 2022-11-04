@@ -3,6 +3,7 @@ import { Header } from "../components/header";
 import { Section1 } from "../components/Section1";
 import { Section2 } from "../components/Section2";
 import { Section3 } from "../components/Section3";
+import { Section4 } from "../components/Section4";
 
 import styles from "../styles/Home.module.css";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Section1 />
         <Section2 />
         <Section3 />
+        <Section4 />
       </main>
       <footer className={styles.footer}></footer>
     </div>
