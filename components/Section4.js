@@ -5,18 +5,22 @@ export function Section4() {
   return (
     <section className={styles.container}>
       <Image
-        src={"/bg4_1.png"}
+        src={require("../public/bg4_1.png")}
         alt=""
         width={414}
         height={325}
         className={styles.bg1}
+        quality={100}
+        placeholder="blur"
       />
       <Image
-        src={"/bg4_2.png"}
+        src={require("../public/bg4_2.png")}
         alt=""
         width={172}
         height={182}
         className={styles.bg2}
+        quality={100}
+        placeholder="blur"
       />
       <h1 className={styles.title}>
         Этапы <span className={styles.title_colored}>работы</span>

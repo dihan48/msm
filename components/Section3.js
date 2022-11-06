@@ -8,35 +8,35 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "../styles/Section3.module.css";
 
 const slider = [
-  "/1/image 7.png",
-  "/1/image 8.png",
-  "/1/image 9.png",
-  "/1/image 10.png",
-  "/1/image 11.png",
+  require("../public/1/image 7.png"),
+  require("../public/1/image 8.png"),
+  require("../public/1/image 9.png"),
+  require("../public/1/image 10.png"),
+  require("../public/1/image 11.png"),
 
-  "/2/image 7.png",
-  "/2/image 8.png",
-  "/2/image 9.png",
-  "/2/image 10.png",
-  "/2/image 11.png",
+  require("../public/2/image 7.png"),
+  require("../public/2/image 8.png"),
+  require("../public/2/image 9.png"),
+  require("../public/2/image 10.png"),
+  require("../public/2/image 11.png"),
 
-  "/3/image 7.png",
-  "/3/image 8.png",
-  "/3/image 9.png",
-  "/3/image 10.png",
-  "/3/image 11.png",
+  require("../public/3/image 7.png"),
+  require("../public/3/image 8.png"),
+  require("../public/3/image 9.png"),
+  require("../public/3/image 10.png"),
+  require("../public/3/image 11.png"),
 
-  "/4/image 7.png",
-  "/4/image 8.png",
-  "/4/image 9.png",
-  "/4/image 10.png",
-  "/4/image 11.png",
+  require("../public/4/image 7.png"),
+  require("../public/4/image 8.png"),
+  require("../public/4/image 9.png"),
+  require("../public/4/image 10.png"),
+  require("../public/4/image 11.png"),
 
-  "/5/image 7.png",
-  "/5/image 8.png",
-  "/5/image 9.png",
-  "/5/image 10.png",
-  "/5/image 11.png",
+  require("../public/5/image 7.png"),
+  require("../public/5/image 8.png"),
+  require("../public/5/image 9.png"),
+  require("../public/5/image 10.png"),
+  require("../public/5/image 11.png"),
 ];
 
 export function Section3() {
@@ -44,32 +44,40 @@ export function Section3() {
   return (
     <div className={styles.bg_container}>
       <Image
-        src={"/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png"}
+        src={require("../public/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png")}
         alt=""
         width={94}
         height={94}
         className={styles.bg1}
+        quality={100}
+        placeholder="blur"
       />
       <Image
-        src={"/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png"}
+        src={require("../public/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png")}
         alt=""
         width={68}
         height={68}
         className={styles.bg2}
+        quality={100}
+        placeholder="blur"
       />
       <Image
-        src={"/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png"}
+        src={require("../public/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png")}
         alt=""
         width={80}
         height={80}
         className={styles.bg3}
+        quality={100}
+        placeholder="blur"
       />
       <Image
-        src={"/4510133a6f9c014534b9b84fd6197fec.png"}
+        src={require("../public/4510133a6f9c014534b9b84fd6197fec.png")}
         alt=""
         width={352}
         height={352}
         className={styles.bg4}
+        quality={100}
+        placeholder="blur"
       />
       <section className={styles.container}>
         <h1 className={styles.title}>Портфолио</h1>
@@ -97,8 +105,8 @@ export function Section3() {
                     alt=""
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 20vw"
-                    loading={"lazy"}
                     quality={100}
+                    placeholder="blur"
                   />
                 </div>
               </div>
@@ -108,22 +116,6 @@ export function Section3() {
         <div ref={paginationRef} className={styles.pagination} />
         <button className={styles.button}>Смотреть все работы</button>
       </section>
-    </div>
-  );
-}
-
-function Slide({ url }) {
-  return (
-    <div className={styles.slide}>
-      <Image
-        src={url}
-        alt=""
-        fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 20vw"
-        loading={"lazy"}
-        quality={100}
-        // style={{ padding: `0 4px` }}
-      />
     </div>
   );
 }
