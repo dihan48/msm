@@ -27,14 +27,14 @@ export function Section5() {
         className={styles.bg3}
       />
       <Image
-        src={"/Group9.svg"}
+        src={"/Group9.png"}
         alt=""
         width={366}
         height={179}
         className={styles.bg4}
       />
       <Image
-        src={"/Group56.svg"}
+        src={"/Group56.png"}
         alt=""
         width={251}
         height={106}
