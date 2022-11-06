@@ -43,6 +43,7 @@
 }
 
 .card {
+  position: relative;
   overflow: hidden;
   padding: 38px 0 0 32px;
   width: 398px;
@@ -66,6 +67,19 @@
   border-radius: 0px;
   background: url(../public/work_bg4.svg) right bottom / contain no-repeat;
   pointer-events: none;
+}
+
+.card_number {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 102.9%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: rgba(255, 255, 255, 0.02);
 }
 
 .card_title {

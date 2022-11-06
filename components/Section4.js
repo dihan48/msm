@@ -23,6 +23,7 @@ export function Section4() {
       </h1>
       <div className={styles.cards}>
         <div className={styles.card}>
+          <div className={styles.card_number}>01</div>
           <h2 className={styles.card_title}>Общение с клиентом</h2>
           <div className={styles.card_content1}>
             <p className={styles.card_text}>
@@ -40,6 +41,7 @@ export function Section4() {
           </div>
         </div>
         <div className={styles.card}>
+          <div className={styles.card_number}>02</div>
           <h2 className={styles.card_title}>Анализ конкурентов</h2>
           <div className={styles.card_content2}>
             <p className={styles.card_text}>
@@ -79,6 +81,7 @@ export function Section4() {
           </div>
         </div>
         <div className={styles.card}>
+          <div className={styles.card_number}>03</div>
           <h2 className={styles.card_title}>Утверждение и сдача</h2>
           <div className={styles.card_content3}>
             <p className={styles.card_text}>
