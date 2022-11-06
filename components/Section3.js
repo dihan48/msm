@@ -8,6 +8,11 @@ import "swiper/css";
 import styles from "../styles/Section3.module.css";
 import { useEffect, useRef, useState } from "react";
 
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const slider = [
   "/s1.png",
   "/s2.png",
@@ -42,7 +47,6 @@ const slider = [
 
 export function Section3() {
   const paginationRef = useRef();
-
   return (
     <div className={styles.bg_container}>
       <Image
@@ -76,27 +80,23 @@ export function Section3() {
       <section className={styles.container}>
         <h1 className={styles.title}>Портфолио</h1>
         <div className={styles.slider_container}>
-          <Swiper
-            slidesPerView={5}
-            spaceBetween={8}
-            slidesPerGroup={5}
-            loop={true}
-            loopFillGroupWithBlank={true}
-            modules={[Pagination]}
-            className={styles.slider}
-            pagination={{
-              clickable: true,
-              bulletActiveClass: styles.bullet_active,
-              bulletClass: styles.bullet,
-              horizontalClass: styles.bullets,
-              modifierClass: "",
-            }}
-            onBeforeInit={(swiper) => {
-              swiper.params.pagination.el = paginationRef.current;
-            }}
+          <Slider
+            dots={true}
+            infinite={false}
+            speed={500}
+            slidesToShow={5}
+            slidesToScroll={5}
+            arrows={false}
+            slide={false}
+            appendDots={(dots) => (
+              <div>
+                <ul className={styles.bullets}>{dots}</ul>
+              </div>
+            )}
+            customPaging={(i) => <div className={styles.bullet} />}
           >
             {slider.map((url, index) => (
-              <SwiperSlide key={index} className={styles.slide_container}>
+              <div key={index} className={styles.slide_container}>
                 <div className={styles.slide}>
                   <Image
                     src={url}
@@ -107,13 +107,29 @@ export function Section3() {
                     quality={100}
                   />
                 </div>
-              </SwiperSlide>
+              </div>
             ))}
-          </Swiper>
+          </Slider>
         </div>
         <div ref={paginationRef} className={styles.pagination} />
         <button className={styles.button}>Смотреть все работы</button>
       </section>
+    </div>
+  );
+}
+
+function Slide({ url }) {
+  return (
+    <div className={styles.slide}>
+      <Image
+        src={url}
+        alt=""
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 20vw"
+        loading={"lazy"}
+        quality={100}
+        // style={{ padding: `0 4px` }}
+      />
     </div>
   );
 }

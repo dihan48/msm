@@ -87,8 +87,9 @@
 }
 
 .slider_container {
-  padding: 0 26px;
+  padding: 0 22px 0 18px;
   position: relative;
+  margin: 0 -4px;
 }
 
 .slider_container::after {
@@ -111,7 +112,7 @@
   top: auto;
   left: auto;
   right: 8px;
-  bottom: -22px;
+  bottom: -17px;
   background: url(../public/Group41.svg) center / contain no-repeat;
 }
 
@@ -122,20 +123,21 @@
 .slide_container {
   border-radius: 5.78618px;
   overflow: hidden;
+  padding: 0 4px;
 }
 
 .slide {
+  position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 133.48%;
 }
 
 .bullets {
-  /* position: absolute;
-  bottom: -80px;
-  left: 0; */
-
-  margin-top: 80px;
+  padding: unset;
+  margin: unset;
+  position: absolute;
+  top: 45px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -151,20 +153,7 @@
   border-radius: 100%;
 }
 
-.bullet::after {
-  content: "";
-  position: absolute;
-  border-radius: 100%;
-  width: 10px;
-  height: 10px;
-  background: #fff;
-  opacity: 0.8;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.bullet_active::after {
+.bullets [class*="slick-active"] .bullet::after {
   content: "";
   position: absolute;
   border-radius: 100%;
@@ -178,12 +167,25 @@
   transform: translate(-50%, -50%);
 }
 
+.bullet::after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 0.8;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .pagination {
 }
 
 .button {
   padding: 10px 40px;
-  margin: 51px auto 0;
+  margin: 143px auto 0;
   display: block;
   font-family: "Raleway";
   font-style: normal;
