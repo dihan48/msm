@@ -1,6 +1,26 @@
 .container {
+  position: relative;
   height: 875px;
   padding-top: 115px;
+}
+
+.bg1 {
+  z-index: 1;
+  position: absolute;
+  left: -213px;
+  right: auto;
+  top: auto;
+  bottom: 37px;
+  transform: rotate(-7.1deg);
+}
+
+.bg2 {
+  position: absolute;
+  left: auto;
+  right: -105px;
+  top: 180px;
+  bottom: auto;
+  transform: rotate(-5.5deg);
 }
 
 .title {
@@ -67,6 +87,15 @@
   font-size: 17px;
   line-height: 130%;
   color: #c1c5cf;
+}
+
+.card_text_highlight {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #ffffff;
 }
 
 .card_content1 {
