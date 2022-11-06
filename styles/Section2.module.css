@@ -39,18 +39,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 102.9%;
-  letter-spacing: 0.1em;
   color: #fff;
-  /* background: radial-gradient(
-      188.57% 2221.14% at 84.07% -105.71%,
-      rgba(38, 21, 73, 0.2) 0%,
-      rgba(47, 27, 90, 0) 100%
-    ),
-    #ffffff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent; */
 }
 
 .feature_text,
