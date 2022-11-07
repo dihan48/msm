@@ -1,0 +1,121 @@
+.container {
+  position: relative;
+  padding-top: 85px;
+  height: 953px;
+}
+
+.title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 102.9%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #111018;
+  border-radius: 6px;
+  padding: 24px 40px 32px;
+}
+
+.card_title {
+  margin: unset;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 102.9%;
+  color: #ffffff;
+}
+
+.card_features {
+  padding: unset;
+  padding-left: 20px;
+}
+
+.card_features li {
+  position: relative;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 400.7%;
+  color: #ffffff;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.card_features li::marker {
+  content: "";
+}
+
+.card_features li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 7px;
+  height: 7px;
+  background: #9a33eb;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.card_text_gray {
+  color: #74737c;
+}
+
+.price {
+  position: relative;
+  margin-top: 44px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 102.9%;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
+
+.price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  padding-left: 6px;
+  width: 20px;
+  height: 20px;
+  mask: url(../public/432fdd15718f5f9bbe3543995baccd39.png) center / contain
+    no-repeat;
+  transform: translateY(-50%);
+  background-color: #9a33eb;
+}
+
+.card_button {
+  margin-top: 50px;
+  padding: 10px 35px;
+  gap: 10px;
+  width: 210px;
+  height: 38px;
+  background: #9a33eb;
+  border-radius: 50px;
+  border: unset;
+}
+
+.card_gold .card_features li::before {
+  background: #deae02;
+}
+
+.card_gold .price::after {
+  background-color: #deae02;
+}
+
+.card_gold .card_button {
+  background: #deae02;
+}
