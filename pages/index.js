@@ -7,6 +7,7 @@ import { Section4 } from "../components/Section4";
 import { Section5 } from "../components/Section5";
 import { Section6 } from "../components/Section6";
 import { Section7 } from "../components/Section7";
+import { Section8 } from "../components/Section8";
 
 import styles from "../styles/Home.module.css";
 
@@ -34,6 +35,7 @@ export default function Home() {
         <Section5 />
         <Section6 />
         <Section7 />
+        <Section8 />
       </main>
       <footer className={styles.footer}></footer>
     </div>
