@@ -1,0 +1,121 @@
+.container {
+  position: relative;
+  height: 875px;
+  padding-top: 115px;
+}
+
+.bg1 {
+  z-index: 1;
+  position: absolute;
+  left: -213px;
+  right: auto;
+  top: auto;
+  bottom: 37px;
+  transform: rotate(-7.1deg);
+}
+
+.bg2 {
+  position: absolute;
+  left: auto;
+  right: -105px;
+  top: 180px;
+  bottom: auto;
+  transform: rotate(-5.5deg);
+}
+
+.title {
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 102.9%;
+  color: #ffffff;
+}
+
+.title_colored {
+  color: #9b35eb;
+}
+
+.cards {
+  display: flex;
+  gap: 11px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 38px 0 0 32px;
+  width: 398px;
+  height: 440px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  border-radius: 6px;
+}
+
+.card::before {
+  overflow: hidden;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  border-radius: 0px;
+  background: url(../public/work_bg4.svg) right bottom / contain no-repeat;
+  pointer-events: none;
+}
+
+.card_number {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 102.9%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: rgba(255, 255, 255, 0.02);
+}
+
+.card_title {
+  margin: unset;
+  margin-bottom: 32px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 102.9%;
+  color: #ffffff;
+}
+
+.card_text {
+  margin-top: 20px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #c1c5cf;
+}
+
+.card_text_highlight {
+  font-family: "Raleway";
+  font-style: normal;
+  font-variation-settings: "wght" 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.card_content1 {
+  max-width: 293px;
+}
+
+.card_content3 {
+  max-width: 240px;
+}
