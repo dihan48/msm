@@ -1,16 +1,16 @@
 import Head from "next/head";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
-import { Section1 } from "../components/Section1";
-import { Section2 } from "../components/Section2";
-import { Section3 } from "../components/Section3";
-import { Section4 } from "../components/Section4";
-import { Section5 } from "../components/Section5";
-import { Section6 } from "../components/Section6";
-import { Section7 } from "../components/Section7";
-import { Section8 } from "../components/Section8";
+import { Footer } from "../components/footer";
+import { Header } from "../components/header";
+import { Section1 } from "../components/section1";
+import { Section2 } from "../components/section2";
+import { Section3 } from "../components/section3";
+import { Section4 } from "../components/section4";
+import { Section5 } from "../components/section5";
+import { Section6 } from "../components/section6";
+import { Section7 } from "../components/section7";
+import { Section8 } from "../components/section8";
 
-import styles from "../styles/Home.module.css";
+import styles from "../styles/home.module.css";
 
 export default function Home() {
   return (

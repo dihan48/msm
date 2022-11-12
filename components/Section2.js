@@ -1,4 +1,4 @@
-import styles from "../styles/Section2.module.css";
+import styles from "../styles/section2.module.css";
 
 export function Section2() {
   return (

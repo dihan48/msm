@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Section5.module.css";
+import styles from "../styles/section5.module.css";
 
 export function Section5() {
   return (

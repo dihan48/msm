@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import styles from "../styles/Section3.module.css";
+import styles from "../styles/section3.module.css";
 
 const slider = [
   require("../public/1/image 7.png"),
