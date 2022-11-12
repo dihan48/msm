@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Header } from "../components/header";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 import { Section1 } from "../components/Section1";
 import { Section2 } from "../components/Section2";
 import { Section3 } from "../components/Section3";
@@ -20,7 +21,11 @@ export default function Home() {
         <meta name="viewport" content="" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin={true}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet"
@@ -37,7 +42,7 @@ export default function Home() {
         <Section7 />
         <Section8 />
       </main>
-      <footer className={styles.footer}></footer>
+      <Footer />
     </div>
   );
 }
