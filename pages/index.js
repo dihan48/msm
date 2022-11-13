@@ -18,7 +18,7 @@ export default function Home() {
       <Head>
         <title>Marketing Services Marketplace</title>
         <meta name="description" content="" />
-        <meta name="viewport" content="" />
+        <meta name="viewport" content="width=980, user-scalable=yes" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

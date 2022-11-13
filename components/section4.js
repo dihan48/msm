@@ -89,7 +89,7 @@ export function Section4() {
           <h2 className={styles.card_title}>Утверждение и сдача</h2>
           <div className={styles.card_content3}>
             <p className={styles.card_text}>
-              <span className={styles.card_text_highlight}>
+              <span className={styles.card_text_highlight2}>
                 После выполнения карточка презентуется заказчику
               </span>
             </p>

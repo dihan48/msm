@@ -77,3 +77,15 @@
   color: #ffffff;
   text-decoration: underline;
 }
+
+@media (min-width: 980px) and (max-width: 1219.98px) {
+  .features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+  }
+
+  .feature:nth-child(n)::before {
+    right: -30px;
+  }
+}

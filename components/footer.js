@@ -7,13 +7,10 @@ export function Footer() {
         <div className={styles.info_container}>
           <div className={styles.logo} />
           <div className={styles.info}>
-            Маркетинговое агенство
-            <br />
-            ИП ИГЛИН АНТОН ПЕТРОВИЧ
-            <br />
-            ИНН 231222224400
-            <br />
-            ОГРН 322237500004779
+            <div>Маркетинговое агенство</div>
+            <div>ИП ИГЛИН АНТОН ПЕТРОВИЧ</div>
+            <div>ИНН 231222224400</div>
+            <div>ОГРН 322237500004779</div>
           </div>
           <div className={styles.copyright}>© MSM.STORE 2022</div>
         </div>

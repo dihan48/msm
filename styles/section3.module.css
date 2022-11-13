@@ -8,7 +8,7 @@
 .container {
   position: relative;
   margin: 0 -1px;
-  height: 819px;
+  padding-bottom: 107px;
   border-radius: 20px;
   z-index: 0;
   backdrop-filter: blur(15px);
@@ -198,4 +198,56 @@
   border-radius: 50px;
   cursor: pointer;
   border: unset;
+}
+
+@media (min-width: 980px) and (max-width: 1219.98px) {
+  .container {
+    margin-top: 87px;
+    padding-bottom: 82px;
+  }
+
+  .bg1 {
+    width: 74px;
+    height: 74px;
+    left: -36px;
+    bottom: 63px;
+  }
+
+  .bg2 {
+    width: 53px;
+    height: 53px;
+    left: 290px;
+    top: 37px;
+  }
+
+  .bg3 {
+    width: 63px;
+    height: 63px;
+    right: 223px;
+    bottom: -20px;
+  }
+
+  .bg4 {
+    width: 276px;
+    height: 276px;
+    right: -120px;
+    top: -90px;
+  }
+
+  .title {
+    padding-top: 64px;
+    padding-bottom: 68px;
+    font-size: 45px;
+  }
+
+  .bullets {
+    top: 30px;
+    transform: scale(0.8);
+  }
+
+  .button {
+    padding: 8px 31px;
+    margin: 130px auto 0;
+    font-size: 14px;
+  }
 }

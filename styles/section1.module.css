@@ -234,11 +234,10 @@
   color: #ffffff;
 }
 
-@media (min-width: 992px) and (max-width: 1219.98px) {
+@media (min-width: 980px) and (max-width: 1219.98px) {
   .container {
     margin: 0 auto;
     max-width: 960px;
-    height: 714px;
     background-position: right 18px bottom 18px;
     background-size: 580px 486px;
   }
@@ -283,13 +282,5 @@
 
   .marketplaces {
     margin-top: 66px;
-  }
-}
-
-@media (min-width: 380px) and (max-width: 991.98px) {
-  .container {
-    height: 714px;
-    background-size: 0px 0px;
-    background-position: center;
   }
 }

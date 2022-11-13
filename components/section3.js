@@ -84,7 +84,7 @@ export function Section3() {
         <div className={styles.slider_container}>
           <Slider
             dots={true}
-            infinite={false}
+            infinite={true}
             speed={500}
             slidesToShow={5}
             slidesToScroll={5}

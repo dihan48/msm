@@ -1,10 +1,12 @@
 .container {
   position: relative;
-  padding-top: 85px;
-  height: 953px;
+  padding-top: 194px;
+  padding-bottom: 140px;
 }
 
 .title {
+  margin: unset;
+  margin-bottom: 62px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
@@ -106,6 +108,11 @@
   background: #9a33eb;
   border-radius: 50px;
   border: unset;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .card_gold .card_features li::before {
@@ -118,4 +125,43 @@
 
 .card_gold .card_button {
   background: #deae02;
+  color: #090416;
+}
+
+@media (min-width: 980px) and (max-width: 1219.98px) {
+  .container {
+    padding-top: 134px;
+    padding-bottom: 169px;
+  }
+
+  .title {
+    margin-bottom: 50px;
+    font-size: 45px;
+  }
+
+  .card {
+    padding: 19px 31px 25px;
+    border-radius: 4.7px;
+  }
+
+  .card_title {
+    margin-bottom: 35px;
+    font-size: 28px;
+  }
+
+  .card_features li {
+    font-size: 13px;
+    line-height: 400.7%;
+  }
+
+  .price {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .card_button {
+    margin-top: 39px;
+    font-size: 13px;
+    line-height: 15px;
+  }
 }

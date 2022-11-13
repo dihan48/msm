@@ -88,7 +88,7 @@
   color: #dddddd;
 }
 
-@media (min-width: 992px) and (max-width: 1219.98px) {
+@media (min-width: 980px) and (max-width: 1219.98px) {
   .header {
     margin: 0 auto;
     padding: 0 18px;

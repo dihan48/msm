@@ -53,3 +53,55 @@
   top: 256px;
   left: 468px;
 }
+
+@media (min-width: 980px) and (max-width: 1219.98px) {
+  .container {
+    height: 790px;
+  }
+
+  .title {
+    padding-top: 97px;
+    font-size: 45px;
+  }
+
+  .bg1 {
+    width: 155px;
+    height: 323px;
+    left: 191.13px;
+    top: 293.99px;
+  }
+
+  .bg2 {
+    width: 337px;
+    height: 445px;
+    right: 150px;
+    top: 195px;
+  }
+
+  .bg3 {
+    width: 650px;
+    height: 650px;
+    right: -5px;
+    top: 35px;
+  }
+
+  .bg4 {
+    width: 280px;
+    height: 140px;
+    right: -20px;
+    top: 430px;
+  }
+
+  .bg5 {
+    width: 206px;
+    height: 87px;
+    top: 519px;
+    left: 4px;
+  }
+
+  .bg6 {
+    height: 77px;
+    top: 283px;
+    left: 368px;
+  }
+}
