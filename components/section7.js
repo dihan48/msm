@@ -23,6 +23,14 @@ export function Section7() {
         </div>
       </div>
       <div className={styles.slider_container}>
+        <Image
+          src={require("../public/image21.png")}
+          alt=""
+          width={740}
+          height={740}
+          className={styles.bg1}
+          quality={100}
+        />
         <div className={styles.slider}>
           <Slider
             dots={false}
