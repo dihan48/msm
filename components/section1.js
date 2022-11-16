@@ -3,10 +3,13 @@ import styles from "../styles/section1.module.css";
 export function Section1() {
   return (
     <section className={styles.container}>
-      <div className={styles.bg2} />
-      <div className={styles.bg_card} />
-      <div className={styles.bg1} />
-      <div className={styles.bg_text} />
+      <div className={styles.fon} />
+      <div className={styles.bg}>
+        <div className={styles.bg2} />
+        <div className={styles.bg_card} />
+        <div className={styles.bg1} />
+        <div className={styles.bg_text} />
+      </div>
       <div className={styles.content}>
         <h1 className={styles.title}>Продающие карточки для маркетплейсов</h1>
         <div className={styles.marketplaces}>

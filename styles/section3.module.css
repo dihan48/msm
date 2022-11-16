@@ -1,7 +1,6 @@
 .bg_container {
   position: relative;
   margin: 0 -1px;
-  border-radius: 20px;
   z-index: 1;
 }
 
@@ -9,7 +8,6 @@
   position: relative;
   margin: 0 -1px;
   padding-bottom: 107px;
-  border-radius: 20px;
   z-index: 0;
   backdrop-filter: blur(15px);
   background-color: rgba(255, 255, 255, 0.05);
@@ -131,6 +129,8 @@
   width: 100%;
   height: 0;
   padding-bottom: 133.48%;
+  width: 256px;
+  height: 340px;
 }
 
 .bullets {
@@ -249,5 +249,47 @@
     padding: 8px 31px;
     margin: 130px auto 0;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 979.98px) {
+  .container {
+    margin-top: 43px;
+    margin-bottom: 66px;
+    padding-bottom: 20px;
+    backdrop-filter: blur(3.4px);
+    border: 0.5px solid rgba(255, 255, 255, 0.03);
+    border-radius: 5px;
+  }
+
+  .container::before {
+    content: unset;
+  }
+
+  .title {
+    margin: unset;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .button {
+    padding: 10px;
+    margin: 32px auto 0;
+    width: 225px;
+  }
+
+  .slider_container {
+    padding: 0 16px;
+    margin: unset;
+  }
+
+  .slider_container::after {
+    content: unset;
+  }
+
+  .slider_container::before {
+    content: unset;
   }
 }

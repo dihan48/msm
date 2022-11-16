@@ -1,5 +1,50 @@
 .container {
-  background: radial-gradient(344.06% 153.22% at 384.95% 124.26%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(95.49% 22.16% at -74.01% 81.31%, rgba(127, 45, 191, 0.3) 0%, rgba(127, 45, 191, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(65.86% 21.42% at 136.09% 46.32%, rgba(64, 53, 235, 0.4) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(87.32% 27.98% at 156.74% 72.31%, rgba(64, 53, 235, 0.4) 1.6%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(89.51% 30.21% at 169.43% 92.97%, rgba(127, 45, 191, 0.3) 0%, rgba(127, 45, 191, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(45.47% 15.35% at -27.92% 50%, rgba(203, 17, 171, 0.3) 1.21%, rgba(203, 17, 171, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(107.54% 27.13% at -55.76% 40.27%, rgba(64, 53, 235, 0.4) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(296.13% 112.18% at 281.22% -37.73%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(54.65% 21.73% at -17.37% -3.88%, rgba(155, 53, 235, 0.25) 0%, rgba(155, 53, 235, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #080A0D;
+  background: radial-gradient(
+      344.06% 153.22% at 384.95% 124.26%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      95.49% 22.16% at -74.01% 81.31%,
+      rgba(127, 45, 191, 0.3) 0%,
+      rgba(127, 45, 191, 0) 100%
+    ),
+    radial-gradient(
+      65.86% 21.42% at 136.09% 46.32%,
+      rgba(64, 53, 235, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      87.32% 27.98% at 156.74% 72.31%,
+      rgba(64, 53, 235, 0.4) 1.6%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      89.51% 30.21% at 169.43% 92.97%,
+      rgba(127, 45, 191, 0.3) 0%,
+      rgba(127, 45, 191, 0) 100%
+    ),
+    radial-gradient(
+      45.47% 15.35% at -27.92% 50%,
+      rgba(203, 17, 171, 0.3) 1.21%,
+      rgba(203, 17, 171, 0) 100%
+    ),
+    radial-gradient(
+      107.54% 27.13% at -55.76% 40.27%,
+      rgba(64, 53, 235, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      296.13% 112.18% at 281.22% -37.73%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      54.65% 21.73% at -17.37% -3.88%,
+      rgba(155, 53, 235, 0.25) 0%,
+      rgba(155, 53, 235, 0) 100%
+    ),
+    #080a0d;
   min-height: 100vh;
   overflow: hidden;
 }

@@ -18,21 +18,21 @@ export default function Home() {
       <Head>
         <title>Marketing Services Marketplace</title>
         <meta name="description" content="" />
-        <meta name="viewport" content="width=980, user-scalable=yes" />
+        {/* <meta name="viewport" content="width=980, user-scalable=yes" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      {/* <Header /> */}
       <main className={styles.main}>
-        <Section1 />
-        <Section2 />
+        {/* <Section1 /> */}
+        {/* <Section2 /> */}
         <Section3 />
-        <Section4 />
-        <Section5 />
-        <Section6 />
-        <Section7 />
-        <Section8 />
+        {/* <Section4 /> */}
+        {/* <Section5 /> */}
+        {/* <Section6 /> */}
+        {/* <Section7 /> */}
+        {/* <Section8 /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

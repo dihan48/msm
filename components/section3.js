@@ -39,6 +39,25 @@ const slider = [
   require("../public/5/image 11.png"),
 ];
 
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  initialSlide: 0,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 979,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
 export function Section3() {
   const paginationRef = useRef();
   return (
@@ -83,13 +102,7 @@ export function Section3() {
         <h1 className={styles.title}>Портфолио</h1>
         <div className={styles.slider_container}>
           <Slider
-            dots={true}
-            infinite={true}
-            speed={500}
-            slidesToShow={5}
-            slidesToScroll={5}
-            arrows={false}
-            slide={false}
+            {...settings}
             appendDots={(dots) => (
               <div>
                 <ul className={styles.bullets}>{dots}</ul>

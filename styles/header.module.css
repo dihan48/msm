@@ -1,5 +1,5 @@
 .container {
-  height: 125px;
+  padding: 40px 0;
   width: 100%;
   background: rgba(16, 15, 18, 0.8);
   display: flex;
@@ -111,5 +111,19 @@
   .request_button_container {
     flex-basis: unset;
     flex-grow: unset;
+  }
+}
+
+@media (max-width: 979.98px) {
+  .container {
+    padding: 18px 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu_button {
+    font-size: 12px;
   }
 }
