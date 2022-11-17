@@ -57,6 +57,8 @@
 @media (min-width: 980px) and (max-width: 1219.98px) {
   .container {
     height: 790px;
+    margin: 0 auto;
+    max-width: 980px;
   }
 
   .title {
@@ -103,5 +105,60 @@
     height: 77px;
     top: 283px;
     left: 368px;
+  }
+}
+
+@media (max-width: 979.98px) {
+  .container {
+    margin: 0 auto;
+    max-width: 340px;
+    height: 526px;
+  }
+
+  .title {
+    padding-top: 76px;
+    font-size: 28px;
+  }
+
+  .bg1 {
+    width: 81px;
+    height: 171px;
+    left: 22px;
+    top: 206px;
+  }
+
+  .bg2 {
+    width: 200px;
+    height: 266px;
+    right: 11px;
+    top: 133px;
+  }
+
+  .bg3 {
+    width: 340px;
+    height: 340px;
+    right: -64px;
+    top: 73px;
+  }
+
+  .bg4 {
+    width: 150px;
+    height: 71px;
+    right: 6px;
+    top: 384px;
+  }
+
+  .bg5 {
+    width: 112px;
+    height: 45px;
+    top: 373px;
+    left: -16px;
+  }
+
+  .bg6 {
+    height: 45px;
+    width: 50px;
+    top: 162px;
+    left: 85px;
   }
 }

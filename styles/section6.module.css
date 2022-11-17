@@ -164,3 +164,55 @@
     line-height: 15px;
   }
 }
+
+@media (max-width: 979.98px) {
+  .container {
+    margin: 0 auto;
+    max-width: 340px;
+    padding-top: 48px;
+    padding-bottom: 76px;
+  }
+
+  .title {
+    margin-bottom: 35px;
+    font-size: 28px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 16px 27px 16px;
+    border-radius: 4px;
+  }
+
+  .card_title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .card_features li {
+    font-size: 14px;
+    line-height: 23px;
+    margin-top: 6px;
+  }
+
+  .price {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .price::after {
+    padding-left: 4px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .card_button {
+    padding: 7px 27px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

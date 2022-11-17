@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { useRef } from "react";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
 
 import styles from "../styles/section3.module.css";
 
@@ -38,25 +37,6 @@ const slider = [
   require("../public/5/image 10.png"),
   require("../public/5/image 11.png"),
 ];
-
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 5,
-  slidesToScroll: 5,
-  initialSlide: 0,
-  arrows: false,
-  responsive: [
-    {
-      breakpoint: 979,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
 
 export function Section3() {
   const paginationRef = useRef();
@@ -101,30 +81,37 @@ export function Section3() {
       <section className={styles.container}>
         <h1 className={styles.title}>Портфолио</h1>
         <div className={styles.slider_container}>
-          <Slider
-            {...settings}
-            appendDots={(dots) => (
-              <div>
-                <ul className={styles.bullets}>{dots}</ul>
-              </div>
-            )}
-            customPaging={(i) => <div className={styles.bullet} />}
+          <Swiper
+            className={styles.slider}
+            spaceBetween={8}
+            slidesPerView="auto"
+            breakpoints={{
+              979: {
+                slidesPerView: "auto",
+                slidesPerGroup: 1,
+              },
+              980: {
+                slidesPerView: 5,
+                slidesPerGroup: 5,
+              },
+            }}
           >
-            {slider.map((url, index) => (
-              <div key={index} className={styles.slide_container}>
-                <div className={styles.slide}>
-                  <Image
-                    src={url}
-                    alt=""
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 20vw"
-                    quality={100}
-                    placeholder="blur"
-                  />
-                </div>
-              </div>
-            ))}
-          </Slider>
+            {Array.isArray(slider) &&
+              slider.map((url, index) => (
+                <SwiperSlide key={index} className={styles.slide_container}>
+                  <div className={styles.slide}>
+                    <Image
+                      src={url}
+                      alt=""
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 20vw"
+                      quality={100}
+                      placeholder="blur"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+          </Swiper>
         </div>
         <div ref={paginationRef} className={styles.pagination} />
         <button className={styles.button}>Смотреть все работы</button>

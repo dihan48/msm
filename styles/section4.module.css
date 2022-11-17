@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  /* height: 875px; */
   padding-top: 115px;
   padding-bottom: 196px;
 }
@@ -95,6 +94,7 @@
 }
 
 .card_text {
+  margin: unset;
   margin-top: 20px;
   font-family: "Raleway";
   font-style: normal;
@@ -173,5 +173,67 @@
 
   .card_text_highlight2 {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 979.98px) {
+  .container {
+    padding-top: 47px;
+    padding-bottom: 74px;
+  }
+
+  .bg1 {
+    width: 283px;
+    height: 222px;
+    left: -116px;
+    right: auto;
+    top: auto;
+    bottom: -35px;
+  }
+
+  .bg2 {
+    display: none;
+  }
+
+  .title {
+    margin-bottom: 29px;
+    font-size: 28px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 7px;
+    width: 300px;
+    overflow: visible;
+  }
+
+  .card {
+    padding: 26px 0 29px 21px;
+    min-width: 272px;
+    border-radius: 4px;
+  }
+
+  .card_number {
+    top: 10px;
+    left: 9px;
+    font-size: 49px;
+  }
+
+  .card_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .card_text {
+    margin-top: 13px;
+    font-size: 12px;
+  }
+
+  .card_text_highlight {
+    font-size: 12px;
+  }
+
+  .card_text_highlight2 {
+    font-size: 12px;
   }
 }

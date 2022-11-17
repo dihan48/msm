@@ -87,7 +87,6 @@
 .slider_container {
   padding: 0 22px 0 18px;
   position: relative;
-  margin: 0 -4px;
 }
 
 .slider_container::after {
@@ -115,13 +114,11 @@
 }
 
 .slider {
-  /* background: red; */
 }
 
 .slide_container {
   border-radius: 5.78618px;
   overflow: hidden;
-  padding: 0 4px;
 }
 
 .slide {
@@ -129,8 +126,6 @@
   width: 100%;
   height: 0;
   padding-bottom: 133.48%;
-  width: 256px;
-  height: 340px;
 }
 
 .bullets {
@@ -253,17 +248,62 @@
 }
 
 @media (max-width: 979.98px) {
+  .bg_container {
+    margin: 0 auto;
+    max-width: 340px;
+    padding-top: 43px;
+    padding-bottom: 66px;
+    position: relative;
+    z-index: 1;
+  }
+
   .container {
-    margin-top: 43px;
-    margin-bottom: 66px;
     padding-bottom: 20px;
     backdrop-filter: blur(3.4px);
     border: 0.5px solid rgba(255, 255, 255, 0.03);
     border-radius: 5px;
+
+    overflow: visible;
   }
 
   .container::before {
     content: unset;
+  }
+
+  .bg1 {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    right: auto;
+    top: auto;
+    bottom: 188px;
+  }
+
+  .bg2 {
+    width: 32px;
+    height: 32px;
+    left: 39px;
+    right: auto;
+    top: 27px;
+    bottom: auto;
+  }
+
+  .bg3 {
+    width: 36px;
+    height: 36px;
+    left: auto;
+    right: 10px;
+    top: auto;
+    bottom: 48px;
+  }
+
+  .bg4 {
+    width: 137px;
+    height: 137px;
+    left: auto;
+    right: -48px;
+    top: -26px;
+    bottom: auto;
   }
 
   .title {
@@ -291,5 +331,14 @@
 
   .slider_container::before {
     content: unset;
+  }
+
+  .slider {
+    /* width: 256px; */
+    overflow: visible;
+  }
+
+  .slide_container {
+    width: 255px;
   }
 }

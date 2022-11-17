@@ -121,3 +121,45 @@
     margin-right: 0px;
   }
 }
+
+@media (max-width: 979.98px) {
+  .footer {
+    padding: 0 20px;
+    width: 100%;
+    height: 306px;
+    position: relative;
+    background: rgba(93, 35, 95, 0.15);
+  }
+
+  .container {
+    max-width: 340px;
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info_container {
+    margin-right: unset;
+  }
+
+  .links_container {
+    display: none;
+  }
+
+  .socials_container {
+    margin-left: auto;
+    margin-right: unset;
+  }
+
+  .tg_link {
+    margin-right: 16px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .title_word {
+    display: none;
+  }
+}

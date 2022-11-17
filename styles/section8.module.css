@@ -68,3 +68,41 @@
     filter: drop-shadow(0px 9.20111px 32.2039px rgba(0, 0, 0, 0.7));
   }
 }
+
+@media (max-width: 979.98px) {
+  .container {
+    margin: 0 auto;
+    max-width: 340px;
+    height: 674px;
+  }
+
+  .bg1 {
+    top: -19px;
+    left: 7px;
+    width: 342px;
+    height: 347px;
+  }
+
+  .bg2 {
+    top: auto;
+    bottom: 30px;
+    right: 0px;
+    width: 323px;
+    height: 356px;
+  }
+
+  .bg3 {
+    top: 390px;
+    right: auto;
+    left: 55px;
+    width: 88px;
+    height: 177px;
+  }
+
+  .bg4 {
+    top: 346px;
+    right: 38px;
+    width: 110px;
+    height: 221px;
+  }
+}
