@@ -21,18 +21,18 @@ export default function Home() {
         {/* <meta name="viewport" content="width=980, user-scalable=yes" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      {/* <Header /> */}
       <main className={styles.main}>
-        <Section1 />
+        {/* <Section1 />
         <Section2 />
         <Section3 />
         <Section4 />
         <Section5 />
-        <Section6 />
+        <Section6 /> */}
         <Section7 />
-        <Section8 />
+        {/* <Section8 /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
