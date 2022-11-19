@@ -200,17 +200,27 @@
     font-size: 28px;
   }
 
+  .cards::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+
   .cards {
-    display: flex;
+    padding: 0 20px;
     gap: 7px;
-    width: 300px;
-    overflow: visible;
+    display: flex;
+    overflow-x: scroll;
+    margin: 0 -20px;
   }
 
   .card {
     padding: 26px 0 29px 21px;
-    min-width: 272px;
+    width: 272px;
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
   }
 
   .card_number {
