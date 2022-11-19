@@ -162,3 +162,58 @@
     left: 85px;
   }
 }
+
+@media (max-width: 374.98px) {
+  .container {
+    margin: 0 auto;
+    max-width: 280px;
+    height: 526px;
+  }
+
+  .title {
+    padding-top: 76px;
+    font-size: 28px;
+  }
+
+  .bg1 {
+    width: 75px;
+    height: 154px;
+    left: 22px;
+    top: 206px;
+  }
+
+  .bg2 {
+    width: 177px;
+    height: 236px;
+    right: -13px;
+    top: 133px;
+  }
+
+  .bg3 {
+    width: 340px;
+    height: 340px;
+    right: -85px;
+    top: 73px;
+  }
+
+  .bg4 {
+    width: 132px;
+    height: 61px;
+    right: -18px;
+    top: 355px;
+  }
+
+  .bg5 {
+    width: 99px;
+    height: 39px;
+    top: 362px;
+    left: -10px;
+  }
+
+  .bg6 {
+    height: 45px;
+    width: 50px;
+    top: 162px;
+    left: 85px;
+  }
+}
