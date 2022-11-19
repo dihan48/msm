@@ -44,6 +44,7 @@
 }
 
 .card_features li {
+  list-style-type: none;
   position: relative;
   font-family: "Raleway";
   font-style: normal;
@@ -112,6 +113,7 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
+  color: #fff;
 }
 
 .card_gold .card_features li::before {
