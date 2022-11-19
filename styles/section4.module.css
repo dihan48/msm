@@ -200,18 +200,43 @@
     font-size: 28px;
   }
 
-  .cards::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 0;
-    height: 0;
+  .cards_wrapper {
+    margin: 0 -20px;
+    padding: 0 20px;
   }
 
   .cards {
+    box-sizing: border-box;
     padding: 0 20px;
-    gap: 7px;
-    display: flex;
-    overflow-x: scroll;
     margin: 0 -20px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 7px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scrollbar-color: transpanent;
+  }
+
+  .cards::-webkit-scrollbar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+    background-color: transpanent;
+  }
+
+  .cards::-webkit-scrollbar-thumb,
+  .cards::-webkit-scrollbar-track-piece,
+  .cards::-webkit-resizer {
+    background-color: transpanent;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .cards::-webkit-scrollbar-track {
+    background-color: transpanent;
+    width: 0 !important;
+    height: 0 !important;
   }
 
   .card {
