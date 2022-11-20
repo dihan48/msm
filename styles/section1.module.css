@@ -223,6 +223,12 @@
   color: #c1c5cf;
 }
 
+.button1_wrapper {
+}
+
+.button2_wrapper {
+}
+
 .button1 {
   padding: 8px 33px;
   background: unset;
@@ -377,9 +383,17 @@
     line-height: 14px;
   }
 
-  .button1 {
+  .button1_wrapper {
     grid-area: b1;
     margin: 0 auto;
+  }
+
+  .button2_wrapper {
+    grid-area: b2;
+    margin: 0 auto;
+  }
+
+  .button1 {
     margin-top: 26px;
     padding: 10px;
     width: 235px;
@@ -388,8 +402,6 @@
   }
 
   .button2 {
-    grid-area: b2;
-    margin: 0 auto;
     margin-top: 15px;
     padding: 10px;
     width: 235px;

@@ -13,7 +13,7 @@ export function Footer() {
             <div>ИНН 231222224400</div>
             <div>ОГРН 322237500004779</div>
           </div>
-          <div className={styles.copyright}>© MSM.STORE 2022</div>
+          <div className={styles.copyright}>© marketplaceservice.ru 2022</div>
         </div>
         <div className={styles.links_container}>
           <ScrollLink

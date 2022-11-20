@@ -50,6 +50,7 @@
 }
 
 .copyright {
+  position: absolute;
   margin-top: 47px;
   font-family: "Raleway";
   font-style: normal;
@@ -58,6 +59,7 @@
   line-height: 18px;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .link {

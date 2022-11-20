@@ -36,10 +36,16 @@ export function Section1() {
               to={"section3"}
               smooth={true}
               duration={500}
+              className={styles.button1_wrapper}
             >
               <button className={styles.button1}>Смотреть портфолио</button>
             </ScrollLink>
-            <a href="https://t.me/scrooge_tg" target="_blank" rel="noreferrer">
+            <a
+              href="https://t.me/scrooge_tg"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.button2_wrapper}
+            >
               <button className={styles.button2}>Заказать в telegram</button>
             </a>
           </div>
