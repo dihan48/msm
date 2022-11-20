@@ -1,3 +1,4 @@
+import { Link as ScrollLink } from "react-scroll";
 import styles from "../styles/header.module.css";
 
 export function Header() {
@@ -8,12 +9,35 @@ export function Header() {
           <div className={styles.logo} />
         </div>
         <nav className={styles.menu}>
-          <button className={styles.menu_button}>Примеры работ</button>
-          <button className={styles.menu_button}>Преимущества</button>
-          <button className={styles.menu_button}>Цена</button>
+          <ScrollLink
+            href="#portfolio"
+            to={"section3"}
+            smooth={true}
+            duration={500}
+          >
+            <button className={styles.menu_button}>Примеры работ</button>
+          </ScrollLink>
+          <ScrollLink
+            href="#advantage"
+            to={"section4"}
+            smooth={true}
+            duration={500}
+          >
+            <button className={styles.menu_button}>Преимущества</button>
+          </ScrollLink>
+          <ScrollLink
+            href="#price"
+            to={"section6"}
+            smooth={true}
+            duration={500}
+          >
+            <button className={styles.menu_button}>Цена</button>
+          </ScrollLink>
         </nav>
         <div className={styles.request_button_container}>
-          <button className={styles.request_button}>Оставить заявку</button>
+          <a href="https://t.me/scrooge_tg" target="_blank" rel="noreferrer">
+            <button className={styles.request_button}>Оставить заявку</button>
+          </a>
         </div>
       </div>
     </header>

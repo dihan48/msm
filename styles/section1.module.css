@@ -235,6 +235,7 @@
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .button2 {
@@ -249,6 +250,7 @@
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 @media (min-width: 980px) and (max-width: 1219.98px) {
@@ -275,7 +277,7 @@
   }
 
   .bg {
-    transform: translate(13.5%, -13.5%) scale(77.1%);
+    transform: translate(13.5%, -13.5%) scale(0.771);
     top: 108px;
   }
 
@@ -305,7 +307,7 @@
   }
 
   .bg {
-    transform: translate(50%, -22.3%) scale(55.4%);
+    transform: translate(50%, -22.3%) scale(0.554);
     top: 165px;
     right: 50%;
   }

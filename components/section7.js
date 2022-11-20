@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
@@ -14,54 +15,56 @@ const slider = [
 
 export function Section7() {
   return (
-    <section className={styles.container}>
-      <div className={styles.text_container}>
-        <h1 className={styles.title}>Отзывы</h1>
-        <div className={styles.subtitle}>о работе с нами</div>
-        <div className={styles.description}>
-          Живые и яркие слова благодрности вдохновляют трудится еще лучше!
+    <Element name="section7" id="reviews">
+      <section className={styles.container}>
+        <div className={styles.text_container}>
+          <h1 className={styles.title}>Отзывы</h1>
+          <div className={styles.subtitle}>о работе с нами</div>
+          <div className={styles.description}>
+            Живые и яркие слова благодрности вдохновляют трудится еще лучше!
+          </div>
         </div>
-      </div>
-      <div className={styles.slider_container}>
-        <Image
-          src={require("../public/image21.png")}
-          alt=""
-          width={740}
-          height={740}
-          className={styles.bg1}
-          quality={100}
-        />
-        <div className={styles.slider}>
-          <Slider
-            dots={false}
-            infinite={true}
-            speed={500}
-            slidesToShow={1}
-            slidesToScroll={1}
-            slide={false}
-            arrows={true}
-            fade={true}
-            nextArrow={<SampleNextArrow />}
-            prevArrow={<SamplePrevArrow />}
-          >
-            {slider.map((url, index) => (
-              <div key={index} className={styles.slide_container}>
-                <div className={styles.slide}>
-                  <Image
-                    src={url}
-                    alt=""
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-                    quality={100}
-                    placeholder="blur"
-                  />
+        <div className={styles.slider_container}>
+          <Image
+            src={require("../public/image21.png")}
+            alt=""
+            width={740}
+            height={740}
+            className={styles.bg1}
+            quality={100}
+          />
+          <div className={styles.slider}>
+            <Slider
+              dots={false}
+              infinite={true}
+              speed={500}
+              slidesToShow={1}
+              slidesToScroll={1}
+              slide={false}
+              arrows={true}
+              fade={true}
+              nextArrow={<SampleNextArrow />}
+              prevArrow={<SamplePrevArrow />}
+            >
+              {slider.map((url, index) => (
+                <div key={index} className={styles.slide_container}>
+                  <div className={styles.slide}>
+                    <Image
+                      src={url}
+                      alt=""
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+                      quality={100}
+                      placeholder="blur"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Element>
   );
 }
 

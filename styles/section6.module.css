@@ -114,6 +114,7 @@
   font-size: 15px;
   line-height: 18px;
   color: #fff;
+  cursor: pointer;
 }
 
 .card_gold .card_features li::before {
