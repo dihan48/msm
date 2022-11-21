@@ -16,6 +16,14 @@ export function Section5() {
           quality={100}
         />
         <Image
+          src={require("../public/Group57_2.svg")}
+          alt=""
+          width={954}
+          height={954}
+          className={styles.bg3}
+          quality={100}
+        />
+        <Image
           src={require("../public/Group57.png")}
           alt=""
           width={413}
@@ -45,14 +53,6 @@ export function Section5() {
           width={113}
           height={96}
           className={styles.bg6}
-          quality={100}
-        />
-        <Image
-          src={require("../public/Group57_2.svg")}
-          alt=""
-          width={954}
-          height={954}
-          className={styles.bg3}
           quality={100}
         />
       </div>

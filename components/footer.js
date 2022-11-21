@@ -63,18 +63,26 @@ export function Footer() {
           </ScrollLink>
         </div>
         <div className={styles.socials_container}>
-          <a
-            href="https://t.me/msm_agent"
-            target="_blank"
-            rel="noreferrer"
-            className={styles.tg_link}
-          />
-          <a
-            href="https://vk.com/msm_wb"
-            target="_blank"
-            rel="noreferrer"
-            className={styles.vk_link}
-          />
+          <div className={styles.socials_links}>
+            <a
+              href="https://t.me/msm_agent"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.tg_link}
+            />
+            <a
+              href="https://vk.com/msm_wb"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.vk_link}
+            />
+            <a
+              href="https://wa.me/79182437961"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.whatsapp_link}
+            />
+          </div>
           <h1 className={styles.title}>
             <div className={styles.title_word}>Marketing</div>
             <div className={styles.title_word}>Services</div>
