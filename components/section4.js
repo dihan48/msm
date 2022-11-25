@@ -7,21 +7,21 @@ export function Section4() {
     <Element name="section4" id="advantage">
       <section className={styles.container}>
         <Image
-          src={require("../public/bg4_1.png")}
+          src={require("../public/4/bg4_1.png")}
           alt=""
           width={414}
           height={325}
           className={styles.bg1}
-          quality={100}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           placeholder="blur"
         />
         <Image
-          src={require("../public/bg4_2.png")}
+          src={require("../public/4/bg4_2.png")}
           alt=""
           width={172}
           height={182}
           className={styles.bg2}
-          quality={100}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           placeholder="blur"
         />
         <h1 className={styles.title}>

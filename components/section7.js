@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Element } from "react-scroll";
 import Slider from "react-slick";
 
@@ -5,12 +6,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import styles from "../styles/section7.module.css";
-import Image from "next/image";
 
 const slider = [
-  require("../public/review1.png"),
-  require("../public/review2.png"),
-  require("../public/review3.png"),
+  require("../public/7/review1.png"),
+  require("../public/7/review2.png"),
+  require("../public/7/review3.png"),
 ];
 
 export function Section7() {
@@ -26,12 +26,13 @@ export function Section7() {
         </div>
         <div className={styles.slider_container}>
           <Image
-            src={require("../public/image21.png")}
+            src={require("../public/7/image21.png")}
             alt=""
             width={740}
             height={740}
             className={styles.bg1}
-            quality={100}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            placeholder="blur"
           />
           <div className={styles.slider}>
             <Slider
@@ -53,8 +54,7 @@ export function Section7() {
                       src={url}
                       alt=""
                       fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-                      quality={100}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                       placeholder="blur"
                     />
                   </div>

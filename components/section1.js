@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Element, Link as ScrollLink } from "react-scroll";
 import styles from "../styles/section1.module.css";
 
@@ -5,12 +6,50 @@ export function Section1() {
   return (
     <Element name="section1" id="main">
       <section className={styles.container}>
-        <div className={styles.fon} />
+        <Image
+          src={require("../public/1/section1_fon.png")}
+          alt=""
+          width={2996}
+          height={2516}
+          sizes="100vw"
+          placeholder="blur"
+          className={styles.fon}
+        />
         <div className={styles.bg}>
-          <div className={styles.bg2} />
-          <div className={styles.bg_card} />
-          <div className={styles.bg1} />
-          <div className={styles.bg_text} />
+          <Image
+            className={styles.bg2}
+            src={require("../public/1/a09c9ada179ed532598fa65b9967ad9e.png")}
+            alt=""
+            width={640}
+            height={640}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            placeholder="blur"
+          />
+          <Image
+            className={styles.bg_card}
+            src={require("../public/1/6be0c8fb42af59ebfa095b9c2aeee72a.png")}
+            alt=""
+            width={279}
+            height={522}
+            sizes="100vw"
+            placeholder="blur"
+          />
+          <Image
+            className={styles.bg1}
+            src={require("../public/1/a09c9ada179ed532598fa65b9967ad9e.png")}
+            alt=""
+            width={640}
+            height={640}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            placeholder="blur"
+          />
+          <Image
+            className={styles.bg_text}
+            src={require("../public/1/Group51.svg")}
+            alt=""
+            width={226}
+            height={232}
+          />
         </div>
         <div className={styles.content}>
           <h1 className={styles.title}>Продающие карточки для маркетплейсов</h1>

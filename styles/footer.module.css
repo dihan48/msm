@@ -79,19 +79,19 @@
 .tg_link {
   width: 40px;
   height: 40px;
-  background: url(../public/tg.svg) center/contain no-repeat;
+  background: url(../public/f/tg.svg) center/contain no-repeat;
 }
 
 .vk_link {
   width: 40px;
   height: 40px;
-  background: url(../public/vk.svg) center/contain no-repeat;
+  background: url(../public/f/vk.svg) center/contain no-repeat;
 }
 
 .whatsapp_link {
   width: 40px;
   height: 40px;
-  background: url(../public/whatsapp.svg) center/contain no-repeat;
+  background: url(../public/f/whatsapp.svg) center/contain no-repeat;
 }
 
 .title {

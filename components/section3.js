@@ -10,35 +10,35 @@ import "swiper/css";
 import styles from "../styles/section3.module.css";
 
 const slider = [
-  require("../public/1/image 7.png"),
-  require("../public/1/image 8.png"),
-  require("../public/1/image 9.png"),
-  require("../public/1/image 10.png"),
-  require("../public/1/image 11.png"),
+  require("../public/3/1/image 7.png"),
+  require("../public/3/1/image 8.png"),
+  require("../public/3/1/image 9.png"),
+  require("../public/3/1/image 10.png"),
+  require("../public/3/1/image 11.png"),
 
-  require("../public/2/image 7.png"),
-  require("../public/2/image 8.png"),
-  require("../public/2/image 9.png"),
-  require("../public/2/image 10.png"),
-  require("../public/2/image 11.png"),
+  require("../public/3/2/image 7.png"),
+  require("../public/3/2/image 8.png"),
+  require("../public/3/2/image 9.png"),
+  require("../public/3/2/image 10.png"),
+  require("../public/3/2/image 11.png"),
 
-  require("../public/3/image 7.png"),
-  require("../public/3/image 8.png"),
-  require("../public/3/image 9.png"),
-  require("../public/3/image 10.png"),
-  require("../public/3/image 11.png"),
+  require("../public/3/3/image 7.png"),
+  require("../public/3/3/image 8.png"),
+  require("../public/3/3/image 9.png"),
+  require("../public/3/3/image 10.png"),
+  require("../public/3/3/image 11.png"),
 
-  require("../public/4/image 7.png"),
-  require("../public/4/image 8.png"),
-  require("../public/4/image 9.png"),
-  require("../public/4/image 10.png"),
-  require("../public/4/image 11.png"),
+  require("../public/3/4/image 7.png"),
+  require("../public/3/4/image 8.png"),
+  require("../public/3/4/image 9.png"),
+  require("../public/3/4/image 10.png"),
+  require("../public/3/4/image 11.png"),
 
-  require("../public/5/image 7.png"),
-  require("../public/5/image 8.png"),
-  require("../public/5/image 9.png"),
-  require("../public/5/image 10.png"),
-  require("../public/5/image 11.png"),
+  require("../public/3/5/image 7.png"),
+  require("../public/3/5/image 8.png"),
+  require("../public/3/5/image 9.png"),
+  require("../public/3/5/image 10.png"),
+  require("../public/3/5/image 11.png"),
 ];
 
 export function Section3() {
@@ -62,39 +62,39 @@ export function Section3() {
     <Element name="section3" id="portfolio">
       <div className={styles.bg_container}>
         <Image
-          src={require("../public/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png")}
+          src={require("../public/3/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png")}
           alt=""
           width={94}
           height={94}
           className={styles.bg1}
-          quality={100}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           placeholder="blur"
         />
         <Image
-          src={require("../public/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png")}
+          src={require("../public/3/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png")}
           alt=""
           width={68}
           height={68}
           className={styles.bg2}
-          quality={100}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           placeholder="blur"
         />
         <Image
-          src={require("../public/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png")}
+          src={require("../public/3/b91a8f8aba2979ab6e80fa1ec9fad2ad-min (1).png")}
           alt=""
           width={80}
           height={80}
           className={styles.bg3}
-          quality={100}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           placeholder="blur"
         />
         <Image
-          src={require("../public/4510133a6f9c014534b9b84fd6197fec.png")}
+          src={require("../public/3/4510133a6f9c014534b9b84fd6197fec.png")}
           alt=""
           width={352}
           height={352}
           className={styles.bg4}
-          quality={100}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           placeholder="blur"
         />
         <section className={styles.container}>
@@ -131,8 +131,7 @@ export function Section3() {
                         src={url}
                         alt=""
                         fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 20vw"
-                        quality={100}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                         placeholder="blur"
                       />
                     </div>

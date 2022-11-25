@@ -7,12 +7,11 @@
 .fon {
   position: absolute;
   width: 749px;
-  height: 629px;
+  height: auto;
   left: auto;
   right: 22px;
   top: auto;
   bottom: -38px;
-  background: url(../public/section1_fon.png) center / contain no-repeat;
 }
 
 .bg {
@@ -33,10 +32,6 @@
   right: auto;
   top: 376px;
   bottom: auto;
-  background-image: url(../public/a09c9ada179ed532598fa65b9967ad9e.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   transition: all 0.33s;
 }
 
@@ -48,10 +43,6 @@
   right: auto;
   top: 0;
   bottom: auto;
-  background-image: url(../public/a09c9ada179ed532598fa65b9967ad9e.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   transition: all 0.33s;
   filter: blur(2px);
   transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -65,10 +56,6 @@
   right: auto;
   top: 112px;
   bottom: auto;
-  background-image: url(../public/Group51.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   transition: all 0.33s;
 }
 
@@ -80,7 +67,7 @@
   right: auto;
   top: 149px;
   bottom: auto;
-  background-image: url(../public/6be0c8fb42af59ebfa095b9c2aeee72a.png);
+  background-image: url(../public/1/6be0c8fb42af59ebfa095b9c2aeee72a.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
