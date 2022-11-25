@@ -186,13 +186,17 @@
   }
 
   .card {
-    padding: 16px 27px 16px;
+    padding: 40px 27px 42px;
     border-radius: 4px;
   }
 
   .card_title {
-    margin-bottom: 20px;
+    margin-bottom: 36px;
     font-size: 24px;
+  }
+
+  .card_features {
+    padding-left: 15px;
   }
 
   .card_features li {
@@ -201,8 +205,14 @@
     margin-top: 6px;
   }
 
+  .card_features li::before {
+    left: -15px;
+    width: 5px;
+    height: 5px;
+  }
+
   .price {
-    margin-top: 20px;
+    margin-top: 41px;
     font-size: 24px;
   }
 
