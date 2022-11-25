@@ -33,6 +33,11 @@
   top: 376px;
   bottom: auto;
   transition: all 0.33s;
+  transform: scale(0);
+  animation-delay: 0.75s;
+  animation-duration: 0.75s;
+  animation-name: show1;
+  animation-fill-mode: forwards;
 }
 
 .bg2 {
@@ -45,7 +50,11 @@
   bottom: auto;
   transition: all 0.33s;
   filter: blur(2px);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0) scale(0);
+  animation-delay: 0.5s;
+  animation-duration: 0.75s;
+  animation-name: show2;
+  animation-fill-mode: forwards;
 }
 
 .bg_text {
@@ -57,6 +66,11 @@
   top: 112px;
   bottom: auto;
   transition: all 0.33s;
+  transform: scale(0);
+  animation-delay: 1s;
+  animation-duration: 0.75s;
+  animation-name: show3;
+  animation-fill-mode: forwards;
 }
 
 .bg_card {
@@ -74,7 +88,9 @@
   transition: all 0.33s;
 
   filter: drop-shadow(0px 7.90156px 27.6554px rgba(0, 0, 0, 0.7));
-  transform: matrix(1, 0.02, -0.02, 1, 0, 0);
+
+  animation-duration: 0.75s;
+  animation-name: show4;
 }
 
 .content {
@@ -394,5 +410,53 @@
     width: 235px;
     font-size: 17px;
     line-height: 20px;
+  }
+}
+
+@keyframes show1 {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes show2 {
+  from {
+    opacity: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0) scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: matrix(-1, 0, 0, 1, 0, 0) scale(1);
+  }
+}
+
+@keyframes show3 {
+  from {
+    opacity: 0;
+    transform: translateX(300px) scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes show4 {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
