@@ -16,7 +16,6 @@ export function Section1() {
             width={640}
             height={640}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-            placeholder="blur"
             priority
           />
           <Image
@@ -26,7 +25,6 @@ export function Section1() {
             width={279}
             height={522}
             sizes="100vw"
-            placeholder="blur"
             priority
           />
           <Image
@@ -36,7 +34,6 @@ export function Section1() {
             width={640}
             height={640}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-            placeholder="blur"
             priority
           />
           <Image
