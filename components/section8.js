@@ -26,24 +26,25 @@ export function Section8() {
             quality={100}
           />
         </div>
-        <div className={styles.bg3}>
-          <Image
-            src={require("../public/do.png")}
-            alt=""
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-            quality={100}
-          />
-        </div>
-        <div className={styles.bg4}>
-          <Image
-            src={require("../public/posle.png")}
-            alt=""
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-            quality={100}
-          />
-        </div>
+
+        <Image
+          className={styles.bg3}
+          src={require("../public/do.png")}
+          width={730}
+          height={1468}
+          alt=""
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          quality={100}
+        />
+        <Image
+          className={styles.bg4}
+          src={require("../public/posle.png")}
+          alt=""
+          width={910}
+          height={1830}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          quality={100}
+        />
       </section>
     </Element>
   );

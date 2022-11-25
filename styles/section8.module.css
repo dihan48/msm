@@ -92,18 +92,18 @@
   }
 
   .bg3 {
-    top: 390px;
+    top: 400px;
     right: auto;
-    left: 55px;
-    width: 88px;
-    height: 177px;
+    left: 30px;
+    width: 105px;
+    height: auto;
   }
 
   .bg4 {
-    top: 346px;
+    top: 373px;
     right: 38px;
-    width: 110px;
-    height: 221px;
+    width: 119px;
+    height: auto;
   }
 }
 
@@ -130,17 +130,17 @@
   }
 
   .bg3 {
-    top: 390px;
+    top: 410px;
     right: auto;
-    left: 14px;
-    width: 88px;
-    height: 177px;
+    left: 5px;
+    width: 106px;
+    height: auto;
   }
 
   .bg4 {
-    top: 346px;
-    right: 19px;
-    width: 110px;
-    height: 221px;
+    top: 378px;
+    right: 13px;
+    width: 121px;
+    height: auto;
   }
 }
