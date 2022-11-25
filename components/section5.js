@@ -8,14 +8,6 @@ export function Section5() {
       <div className={styles.container}>
         <h1 className={styles.title}>Результат</h1>
         <Image
-          src={require("../public/Group8.png")}
-          alt=""
-          width={190}
-          height={395}
-          className={styles.bg1}
-          quality={100}
-        />
-        <Image
           src={require("../public/Group57_2.svg")}
           alt=""
           width={954}
@@ -29,6 +21,14 @@ export function Section5() {
           width={413}
           height={545}
           className={styles.bg2}
+          quality={100}
+        />
+        <Image
+          src={require("../public/Group8.png")}
+          alt=""
+          width={190}
+          height={395}
+          className={styles.bg1}
           quality={100}
         />
         <Image
