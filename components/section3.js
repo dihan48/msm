@@ -2,6 +2,8 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Element } from "react-scroll";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 
 import "swiper/css";
 
@@ -42,6 +44,20 @@ const slider = [
 export function Section3() {
   const [swiper, setSwiper] = useState();
   const paginationRef = useRef();
+  const [lightBoxIndex, setLightBoxIndex] = useState(-1);
+
+  const currentImage = slider?.[lightBoxIndex]?.default.src;
+  const nextIndex = (lightBoxIndex + 1) % slider.length;
+  const nextImage =
+    slider?.[nextIndex]?.default.src || currentImage?.default.src;
+  const prevIndex = (lightBoxIndex + slider.length - 1) % slider.length;
+  const prevImage =
+    slider?.[prevIndex]?.default.src || currentImage?.default.src;
+
+  const handleClose = () => setLightBoxIndex(-1);
+  const handleMovePrev = () => setLightBoxIndex(prevIndex);
+  const handleMoveNext = () => setLightBoxIndex(nextIndex);
+
   return (
     <Element name="section3" id="portfolio">
       <div className={styles.bg_container}>
@@ -105,7 +121,11 @@ export function Section3() {
             >
               {Array.isArray(slider) &&
                 slider.map((url, index) => (
-                  <SwiperSlide key={index} className={styles.slide_container}>
+                  <SwiperSlide
+                    key={index}
+                    className={styles.slide_container}
+                    onClick={() => setLightBoxIndex(index)}
+                  >
                     <div className={styles.slide}>
                       <Image
                         src={url}
@@ -125,6 +145,17 @@ export function Section3() {
           <a href="https://t.me/msm_agent" target="_blank" rel="noreferrer">
             <button className={styles.button}>Смотреть все работы</button>
           </a>
+          {!!slider[lightBoxIndex] && (
+            <Lightbox
+              mainSrc={currentImage}
+              nextSrc={nextImage}
+              prevSrc={prevImage}
+              onCloseRequest={handleClose}
+              onMovePrevRequest={handleMovePrev}
+              onMoveNextRequest={handleMoveNext}
+              enableZoom={false}
+            />
+          )}
         </section>
       </div>
     </Element>
