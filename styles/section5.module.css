@@ -3,18 +3,6 @@
   height: 875px;
 }
 
-.container::after {
-  content: "";
-  position: absolute;
-  background: url("../public/4. Before&After___320.png") center top;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  opacity: 0;
-}
-
 .title {
   margin: unset;
   padding-top: 44px;
