@@ -17,7 +17,11 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Marketing Services Marketplace</title>
-        <meta name="description" content="" />
+        <meta name="description" content=""></meta>
+        <meta
+          name="description"
+          content="Продающие карточки для маркетплейсов. Создаем стильные карточки товаров, способные кратно увеличить продажи"
+        />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
