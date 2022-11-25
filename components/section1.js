@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 import { Element, Link as ScrollLink } from "react-scroll";
 import styles from "../styles/section1.module.css";
 
@@ -6,15 +7,7 @@ export function Section1() {
   return (
     <Element name="section1" id="main">
       <section className={styles.container}>
-        <Image
-          src={require("../public/1/section1_fon.png")}
-          alt=""
-          width={2996}
-          height={2516}
-          sizes="100vw"
-          placeholder="blur"
-          className={styles.fon}
-        />
+        <Fon />
         <div className={styles.bg}>
           <Image
             className={styles.bg2}
@@ -95,5 +88,20 @@ export function Section1() {
         </div>
       </section>
     </Element>
+  );
+}
+
+function Fon() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  return (
+    <Image
+      src={require("../public/1/section1_fon.png")}
+      alt=""
+      width={2996}
+      height={2516}
+      sizes="100vw"
+      onLoadingComplete={() => setIsLoaded(true)}
+      className={`${styles.fon} ${isLoaded ? styles.amin : ""}`}
+    />
   );
 }
