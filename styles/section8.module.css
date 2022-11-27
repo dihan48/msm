@@ -73,7 +73,7 @@
   .container {
     margin: 0 auto;
     max-width: 340px;
-    height: 674px;
+    height: 752px;
   }
 
   .bg1 {
@@ -85,24 +85,26 @@
 
   .bg2 {
     top: auto;
-    bottom: 30px;
+    bottom: 125px;
     right: 0px;
     width: 323px;
     height: 356px;
   }
 
   .bg3 {
-    top: 400px;
+    top: auto;
+    bottom: 55px;
     right: auto;
-    left: 30px;
-    width: 105px;
+    left: 6px;
+    width: 141px;
     height: auto;
   }
 
   .bg4 {
-    top: 373px;
-    right: 38px;
-    width: 119px;
+    top: auto;
+    bottom: 55px;
+    right: 6px;
+    width: 171px;
     height: auto;
   }
 }
@@ -111,7 +113,7 @@
   .container {
     margin: 0 auto;
     max-width: 280px;
-    height: 674px;
+    height: 665px;
   }
 
   .bg1 {
@@ -123,24 +125,26 @@
 
   .bg2 {
     top: auto;
-    bottom: 30px;
+    bottom: 85px;
     right: -11px;
     width: 315px;
     height: 315px;
   }
 
   .bg3 {
-    top: 410px;
+    top: auto;
+    bottom: 45px;
     right: auto;
-    left: 5px;
-    width: 106px;
+    left: 6px;
+    width: 121px;
     height: auto;
   }
 
   .bg4 {
-    top: 378px;
-    right: 13px;
-    width: 121px;
+    top: auto;
+    bottom: 45px;
+    right: 6px;
+    width: 135px;
     height: auto;
   }
 }
