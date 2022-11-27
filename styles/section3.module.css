@@ -123,6 +123,7 @@
 .slide_container {
   border-radius: 5.78618px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .slide {
@@ -157,7 +158,7 @@
   bottom: -90px;
   right: 50%;
   transform: translateX(50%);
-  width: 195px;
+  /* width: 195px; */
   padding: 2px;
   overflow: hidden;
 

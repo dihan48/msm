@@ -39,6 +39,18 @@ const slider = [
   require("../public/3/5/image 9.png"),
   require("../public/3/5/image 10.png"),
   require("../public/3/5/image 11.png"),
+
+  require("../public/3/6/image 7.png"),
+  require("../public/3/6/image 8.png"),
+  require("../public/3/6/image 9.png"),
+  require("../public/3/6/image 10.png"),
+  require("../public/3/6/image 11.png"),
+
+  require("../public/3/7/image 7.png"),
+  require("../public/3/7/image 8.png"),
+  require("../public/3/7/image 9.png"),
+  require("../public/3/7/image 10.png"),
+  require("../public/3/7/image 11.png"),
 ];
 
 export function Section3() {
@@ -177,6 +189,7 @@ function getDotsOffset(dotsCount, currentDot) {
 function SwiperPagination({ swiper }) {
   const [slides, setSlides] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (swiper) {
@@ -190,14 +203,25 @@ function SwiperPagination({ swiper }) {
     }
   }, [swiper]);
 
+  useEffect(() => {
+    const resize = () => setIsMobile(swiper?.currentBreakpoint !== "980");
+    resize();
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
+  }, [swiper]);
+
   return (
     <>
       <div className={styles.dots_container}>
         <div
           className={styles.dots}
-          style={{
-            left: `-${getDotsOffset(slides?.length, activeIndex)}px`,
-          }}
+          style={
+            isMobile
+              ? {
+                  left: `-${getDotsOffset(slides?.length, activeIndex)}px`,
+                }
+              : {}
+          }
         >
           {slides?.map((child, index) => (
             <div
