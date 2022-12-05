@@ -16,12 +16,19 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Marketing Services Marketplace</title>
-        <meta name="description" content=""></meta>
         <meta
           name="description"
-          content="Продающие карточки для маркетплейсов. Создаем стильные карточки товаров, способные кратно увеличить продажи"
+          content="Продающий дизайн и инфографика для Wildberries и Ozon, Aliexpress. Создадим уникальные карточки с защитой от копирования конкурентов. Оцени качество или мы вернем деньги"
         />
+        <meta
+          name="keywords"
+          content="заказать продающий дизайн карточек, инфографика, ozon, wildberries, озон, вайлдбериз"
+        />
+        <title>
+          {" "}
+          Инфографика для маркетплейсов | Дизайн карточек товара для
+          Wildberries, Ozon, Aliexpress | Marketing Services for Marketplace{" "}
+        </title>
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
