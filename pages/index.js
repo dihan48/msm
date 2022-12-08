@@ -26,9 +26,8 @@ export default function Home() {
           content="заказать продающий дизайн карточек, инфографика, ozon, wildberries, озон, вайлдбериз"
         />
         <title>
-          {" "}
           Инфографика для маркетплейсов | Дизайн карточек товара для
-          Wildberries, Ozon, Aliexpress | Marketing Services for Marketplace{" "}
+          Wildberries, Ozon, Aliexpress | Marketing Services for Marketplace
         </title>
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/favicon.ico" />
