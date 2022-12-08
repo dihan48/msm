@@ -16,6 +16,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
+        <meta name="yandex-verification" content="1e29adefbb0a902c" />
         <meta
           name="description"
           content="Продающий дизайн и инфографика для Wildberries и Ozon, Aliexpress. Создадим уникальные карточки с защитой от копирования конкурентов. Оцени качество или мы вернем деньги"
